@@ -1,0 +1,68 @@
+body {
+  width: 100%;
+  height: 1073px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 300px;
+}
+
+.gallery {
+  display: grid;
+  max-width: 1280px;
+  width: 100%;
+  height: 660px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    'img1 img2 img3 img4'
+    'img5 img2 img3 img6'
+    'img5 img7 img8 img9';
+}
+
+#area_1 {
+  grid-area: img1;
+  background: url('../assets/exercise_3_img_0.jpg');
+}
+
+#area_2 {
+  grid-area: img2;
+  background: url('../assets/exercise_3_img_1.jpg');
+}
+
+#area_3 {
+  grid-area: img3;
+  background: url('../assets/exercise_3_img_2.jpg');
+}
+
+#area_4 {
+  grid-area: img4;
+  background: url('../assets/exercise_3_img_3.jpg');
+}
+
+#area_5 {
+  grid-area: img5;
+  background: url('../assets/exercise_3_img_4.jpg');
+}
+
+#area_6 {
+  grid-area: img6;
+  background: url('../assets/exercise_3_img_5.jpg');
+}
+
+#area_7 {
+  grid-area: img7;
+  background: url('../assets/exercise_3_img_6.jpg');
+}
+
+#area_8 {
+  grid-area: img8;
+  background: url('../assets/exercise_3_img_7.jpg');
+}
+
+#area_9 {
+  grid-area: img9;
+  background: url('../assets/exercise_3_img_8.jpg');
+}

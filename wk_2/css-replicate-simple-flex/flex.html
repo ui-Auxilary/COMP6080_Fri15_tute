@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex box</title>
+    <style>
+      .container {
+        display: flex;
+        width: 1200px;
+        height: 500px;
+        gap: 5px;
+      }
+
+      .main_content {
+        display: flex;
+        flex-direction: column;
+        flex: 3;
+        gap: 5px;
+      }
+
+      .above {
+        background-color: green;
+        flex: 1;
+      }
+
+      .below {
+        display: flex;
+        flex: 1;
+        gap: 5px;
+      }
+
+      .left {
+        background-color: yellow;
+        flex: 2;
+      }
+
+      .right {
+        background-color: aqua;
+        flex: 1;
+      }
+
+      .sidebar {
+        background-color: red;
+        flex: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="main_content">
+        <div class="above"></div>
+        <div class="below">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+      </div>
+      <div class="sidebar"></div>
+    </main>
+  </body>
+</html>
