@@ -1,0 +1,43 @@
+#cool-text {
+  color: red;
+}
+
+.cool-text {
+  color: yellow;
+}
+
+/* Level 2 */
+/* 
+.duplicate-class {
+  background-color: blue;
+}
+
+.duplicate-class {
+  background-color: orange;
+} */
+
+/* Level 3 */
+/* 
+.simple-class {
+  font-size: 50px;
+}
+
+[randomAttribute] {
+  font-size: 1000px;
+}
+
+p {
+  font-size: 10px;
+} */
+
+/* Level 4 */
+#id1,
+#id2 {
+  color: red;
+}
+
+#id1,
+.class1,
+p[extraPoints] {
+  color: green;
+}
