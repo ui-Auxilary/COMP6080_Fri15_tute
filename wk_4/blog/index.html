@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <style>
+      #comment-template {
+        display: none;
+      }
+
+      li[comment-template] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="comment-list">
+      <li id="comment-template" class="comment" comment-template>
+        <p>Hello</p>
+      </li>
+      <li id="comment-1" class="comment">
+        <p>Hello</p>
+      </li>
+      <li class="comment">
+        <p>Comment 2</p>
+      </li>
+    </ul>
+    <button id="add-comment">Add comment</button>
+    <script>
+      let commentTemplate = document.getElementById('comment-template');
+      let commentClone = commentTemplate.cloneNode(true);
+      let addComment = document.getElementById('add-comment');
+
+      const add_comment = () => {
+        let commentTemplate = document.getElementById('comment-template');
+        let commentClone = commentTemplate.cloneNode(true);
+        let commentList = document.getElementById('comment-list');
+        commentList.appendChild(commentClone);
+      };
+
+      addComment.addEventListener('click', add_comment);
+    </script>
+  </body>
+</html>
