@@ -27,8 +27,10 @@ eye.addEventListener('click', () => {
 
   if (!password_state) {
     password_input[0].type = 'text';
+    eye.src = 'assets/eye_close.svg';
   } else {
     password_input[0].type = 'password';
+    eye.src = 'assets/eye_open.svg';
   }
   password_state = !password_state;
 });
