@@ -47,14 +47,23 @@ registerButton.addEventListener('click', (e) => {
 
   console.log('posting userData', userData);
   // Fetch data
-  fetch('http://localhost:5005/register', {
+
+  let res = fetch('http://localhost:5005/register', {
     method: 'POST',
-    body: {
+    mode: 'cors',
+    body: JSON.stringify({
       email: userData.get('email'),
       password: userData.get('password'),
       name: userData.get('username'),
-    },
+    }),
   });
+
+  res
+    .then((res) => {
+      console.log(res);
+      return res.json();
+    })
+    .then((data) => console.log(data));
 });
 
 loginButton.addEventListener('click', (e) => {

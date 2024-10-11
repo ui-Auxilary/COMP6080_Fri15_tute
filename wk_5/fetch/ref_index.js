@@ -1,6 +1,9 @@
 const url = `https://fakerapi.it/api/v1/persons?_quantity=10`;
 fetch(url)
-  .then((response) => response.json())
+  .then((response) => {
+    console.log(response);
+    return response.json();
+  })
   .then(({ data }) => {
     data.map(({ id, firstname, email }) => {
       console.log(id, firstname, email);
@@ -22,4 +25,7 @@ fetch(url)
       peopleList.appendChild(templateClone);
     });
   })
-  .catch((error) => console.log(error));
+  .catch((error) => {
+    console.log(error);
+    throw error;
+  });

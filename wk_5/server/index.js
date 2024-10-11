@@ -1,11 +1,14 @@
 import express from 'express';
+import bodyParser from 'body-parser';
 import jwt from 'jsonwebtoken';
+import cors from 'cors';
 
 const BACKEND_PORT = 5005;
 const TERRIBLE_SECRET = 'dontexposeme';
 
 const app = express();
-app.use(express.json());
+app.use(cors());
+app.use(bodyParser.json());
 
 const db = {};
 
@@ -19,8 +22,13 @@ app.get('/feeds', (req, res) => {
 
 app.post('/register', (req, res) => {
   const userId = Object.keys(db).length + 1;
-  const { email, password, name } = req.body;
-  console.log('Received', email, password, name);
+
+  let { email, password, name } = req.body;
+
+  email = 'joe@gmail.com';
+  password = '123';
+  name = 'joe';
+
   db[userId] = {
     email,
     password,
