@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .person {
+        display: block;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        width: 100%;
+      }
+
+      #person-list {
+        height: 1000px;
+        border: 1px solid #cccccc;
+        width: 300px;
+        padding: 0;
+      }
+      
+      [personTemplate] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="person-list">
+      <li class="person" personTemplate>
+        <h3 id="person-id">Name:</h1>
+        <p id="person-email">Email</p>
+      </li>
+       <li class="person">
+        <h3 id="person-id">Joe</h1>
+        <p id="person-email">Email</p>
+      </li>
+       <li class="person">
+        <h3 id="person-id">Name:</h1>
+        <p id="person-email">Email</p>
+      </li>
+    </ul>
+    <script src="index.js"></script>
+  </body>
+</html>
