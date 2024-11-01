@@ -1,0 +1,30 @@
+#todo-header {
+  background-color: #3b63ff;
+  padding: 20px 100px;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#todolist-container {
+  display: flex;
+  align-items: center;
+}
+
+#todolist-wrapper {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+}
+
+#metric-container {
+  text-align: left;
+}
+
+.metric-row {
+  display: flex;
+  gap: 10px;
+}
