@@ -1,10 +1,13 @@
-import { useContext, useState } from 'react';
+import { useContext, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { TodoContext } from '../../context/TodoProvider';
 
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
+import './Create.css';
 export default function Create() {
+  const constraintsRef = useRef(null);
   const { setTodos } = useContext(TodoContext);
   const navigate = useNavigate();
 
@@ -12,7 +15,11 @@ export default function Create() {
   const [description, setDesc] = useState('');
 
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 30 }}
+      transition={{ duration: 0.5 }}
+    >
       <Link id='back' to={'/'}>
         Back
       </Link>
@@ -44,6 +51,6 @@ export default function Create() {
           Create
         </button>
       </form>
-    </div>
+    </motion.div>
   );
 }
