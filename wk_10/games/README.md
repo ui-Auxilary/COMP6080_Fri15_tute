@@ -1,12 +1,12 @@
 # Fake COMP6080 Exam
 
-Task 0:
+**Making the dashboard:**
 - Create a dashboard with a header that is 80px in height and green/yellow.
 - Ensure there is a total score in the center of the dashboard, initially set to 0
 - Ensure there are 3 links on the header with links to the games: Tic-tac-toe, Asteroids, Rock paper scissors
 - Ensure the links are "spaced-around"
 
-Game 1 Tic-tac-toe ❌:
+**Game 1 Tic-tac-toe** ❌:
 - Make a 3x3 grid and standard game of tic tac toe (video/sample provided).
 - There should be a play button to start the game, this button should be disabled when the game has started
 - The player should play as "O"
@@ -15,7 +15,7 @@ Game 1 Tic-tac-toe ❌:
 - If the computer wins, the play button turns into "Play again" and should not be disabled
 - If there is a draw, the game is **automatically** restarted
 
-Game 2 Asteroids ☄️:
+**Game 2 Asteroids** ☄️:
 - The game container should be 1000px x 1000px with a gray background and 3px solid #000 border.
 - There should 3 rows of asteroids which are 80px x 20px in size. They should have a gap of 20px between each asteroid.
 - Each row should contain 8 asteroids and each row should have a 30px gap.
@@ -29,7 +29,7 @@ Game 2 Asteroids ☄️:
 - If the asteroids reach where the player are, the game ends with the text "You lose" and a play again button should appear in the center of the screen.
 - If the player wins, the text "You win should show" and their total score should increase. A play again button should appear in the center of the screen.
 
-Game 3 Rock paper scissors ✂️:
+**Game 3 Rock paper scissors** ✂️:
 - There should 3 clickable squares of size 200px x 200px and spaced-evenly in the center of the game screen.
 - The squares should have the text: "Rock", "Paper" and "Scissors" respectively, and this text should be centered in the square.
 - Above the squares should be two rows of text (initially empty), one which says "User move" and the other which says "Computer move".
